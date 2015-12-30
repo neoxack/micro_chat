@@ -1,0 +1,107 @@
+#window {
+    background: #fff;
+    overflow: hidden;
+    height: 100%;
+    font: 13px Consolas, Menlo, Monaco, "Lucida Console", "DejaVu Sans Mono", "Courier New", monospace;
+}
+
+#chat {
+    bottom: 0px;
+    margin-bottom: 50px;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    font: inherit;
+    line-height: 1.4;
+    padding-left: 20px;
+    overflow: auto;
+    overflow-y: auto;
+    position: absolute;
+}
+
+#chat .messages {
+    display: table;
+    width: 100%;  
+}
+
+#chat .msg {
+    display: table-row;
+    word-wrap: break-word;
+}
+
+#form {
+	background: #eee;
+    border-top: 1px solid #ddd;
+    bottom: 0;
+    height: 48px;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    right: 0px;
+    display: flex;
+}
+
+#form .nick {
+    background: #f6f6f6;
+    color: #666;
+    font: inherit;
+    font-size: 11px;
+    padding: 0 9px;
+    border-radius: 1px;
+    margin: 6px;
+    padding-top: 12px;
+}
+
+#form .input {
+	flex:1;
+	border: 1px solid #ddd;
+    font: inherit;
+    border-radius: 2px;
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    outline: none;
+}
+
+#form .submit {
+    background: #f4f4f4;
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    border: 1px solid #ddd;
+    border-bottom-color: #b7b7b7;
+    border-radius: 2px;
+    color: #555;
+    font: inherit;
+    transition: opacity .3s;
+    margin: 5px;
+}
+
+#chat .time, #chat .user, #chat .text {
+    display: table-cell;
+    padding: 2px 0;
+    vertical-align: top;
+}
+
+#chat .time {
+	color: #ddd;
+	text-align: right;
+	width: 46px;
+	min-width: 46px;
+}
+
+#chat .user {
+	border-right: 1px solid #f6f6f6;
+    color: #50a656;
+    padding-right: 10px;
+    text-align: right;
+    width: 134px;
+    min-width: 134px;
+}
+
+#chat .text {
+	color: #808080;
+	padding-left: 10px;
+    padding-right: 6px;
+}
+
+#chat .event {
+	color: #ccc;
+}
