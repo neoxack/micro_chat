@@ -105,3 +105,38 @@
 #chat .event {
 	color: #ccc;
 }
+
+.page_media_thumbed_table {
+    padding-top: 0;
+    padding-left: 5px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+td.page_media_link_thumb {
+    cursor: pointer;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+    width: 100px;
+    padding-right: 25px;
+}
+
+a.page_media_link_title {
+    font-weight: bold;
+    color: #446790;
+}
+
+.page_media_link_addr, .page_media_link_addr a {
+    display: block;
+    color: #777777;
+}
+
+div.page_media_link_desc {
+    color: #000;
+    padding-top: 4px;
+}
